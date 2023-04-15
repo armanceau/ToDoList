@@ -28,7 +28,12 @@ function addItem(){
 
 
 function deleteItem(id){
-  const newArray = items.filter(item => item.id !== id)
+  const newArray = items.filter(item => item.id !== id);
+  setItems(newArray);
+}
+
+function deleteItems(id){
+  const newArray = [];
   setItems(newArray);
 }
 
@@ -55,7 +60,14 @@ function deleteItem(id){
             onChange={e => setNewItem(e.target.value)}
           />
 
-          <button className='add-button' onClick={() => addItem()}>➕</button>
+          <button className='add-button' onClick={() => addItem()}>✔️</button>
+
+          <br></br>
+
+          <div className='divDeleteAll'>
+            <button className='deleteAll-button' onClick={() => deleteItems()}>Tout supprimer</button>
+          </div>
+
         </div>
         
         <div>

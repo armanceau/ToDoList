@@ -26,9 +26,20 @@ body{
   flex-direction: column;
 }
 
-input{
-  padding: 4px;
-  margin-right: 8px;
+.divDeleteAll{
+  display: flex;
+  justify-content: center;
+}
+
+.deleteAll-button{
+  margin: 12px 0;
+  border-radius: 4px;
+  padding: 1px 1px 1px 1px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 ul{
@@ -56,6 +67,8 @@ li{
 
   padding-top: 4px;
   padding-bottom: 4px;
+
+  cursor: pointer;
 }
 
 .add-button{
@@ -63,14 +76,18 @@ li{
   margin-left: 8px;
 
   border: none;
-  color: green;
   border-radius: 4px;
 
   padding-top: 4px;
   padding-bottom: 4px;
+
+  cursor: pointer;
 }
 
 .add-input{
+  padding: 4px;
+  margin-right: 8px;
+
   font-size: 15px;
 
   border-radius: 4px;
