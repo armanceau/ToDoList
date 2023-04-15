@@ -12,7 +12,7 @@ const [items, setItems] = useState([]);
 function addItem(){
 
   if(!newItem) {
-    alert("Entrer un item.")
+    alert("N'oubliez pas de rentrer un item !");
     return;
   }
 
@@ -26,13 +26,12 @@ function addItem(){
   console.log(items);
 }
 
-
 function deleteItem(id){
   const newArray = items.filter(item => item.id !== id);
   setItems(newArray);
 }
 
-function deleteItems(id){
+function deleteItems(){
   const newArray = [];
   setItems(newArray);
 }
@@ -80,14 +79,8 @@ function deleteItems(id){
             })}
           </ul>
         </div>
-        
-      
+  
       </section>
-
-      
-
-      
-
     </div>
   );
 }
